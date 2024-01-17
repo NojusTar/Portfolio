@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 90%);
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(209, 209, 209);
+  background: radial-gradient(circle, rgb(209, 209, 209) 0%, rgb(150, 150, 150) 47%, rgb(71, 71, 71) 100%);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 200px;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.nav-wrapper .nav {
+  box-shadow: 1px 1px 70px 6px rgba(255, 255, 255, 0.48);
+  background: rgb(92, 92, 92);
+  background: radial-gradient(circle, rgb(92, 92, 92) 0%, rgb(59, 59, 59) 18%, rgb(0, 0, 0) 100%);
+  margin: 10px;
+  padding: 5px 0px;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-wrapper .nav .nav-a {
+  color: white;
+  font-weight: bold;
+}
+.nav-wrapper .nav .nav-img {
+  max-height: 30px;
+}
+
+.card {
+  box-shadow: 1px 1px 70px 6px rgba(255, 255, 255, 0.48);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(115deg, rgb(0, 0, 0) 0%, rgb(60, 60, 60) 85%, rgb(98, 98, 98) 100%);
+  height: 600px;
+  margin: 40px 20%;
+  max-width: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: box-shadow 0.5s;
+}
+.card .card-title {
+  color: white;
+}
+.card .card-description {
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  padding: 20px;
+  font-size: 1.5em;
+}
+.card .card-images {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.card .card-images .card-img {
+  border-radius: 20px;
+  width: 500px;
+  height: 250px;
+  background-image: url("../../../assets/images/pigus_alus.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  color: white;
+  padding: 0px 20px;
+  transition: 5s;
+}
+.card .card-images .card-img div {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 40%, rgb(213, 213, 213) 100%);
+  border: solid white 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.card .card-images .card-img div h1 {
+  margin-top: 50%;
+  margin-left: 13%;
+  color: white;
+  line-height: 0;
+}
+.card .card-images .card-img:hover {
+  border: solid white 2px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 70px 15px rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */
