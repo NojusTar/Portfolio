@@ -117,9 +117,10 @@ img {
 
 .c-info {
   color: white;
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  font-size: 1.5em;
-  margin-left: 70px;
+  background-color: red;
+  padding: 20px;
+}
+.c-info img {
+  height: 30px;
+  border-radius: 0;
 }/*# sourceMappingURL=style.css.map */
