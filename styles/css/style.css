@@ -36,28 +36,38 @@ img {
 }
 
 .nav-wrapper {
-  display: flex;
-  justify-content: center;
-}
-.nav-wrapper .nav {
   box-shadow: 1px 1px 70px 6px rgba(255, 255, 255, 0.48);
   background: rgb(92, 92, 92);
   background: radial-gradient(circle, rgb(92, 92, 92) 0%, rgb(59, 59, 59) 18%, rgb(0, 0, 0) 100%);
-  margin: 10px;
   padding: 5px 0px;
+  margin: 0 auto;
+  margin-top: 15px;
   max-width: 500px;
   width: 100%;
   border-radius: 30px;
+}
+.nav-wrapper .center img {
+  width: 25px;
+  margin-top: 3px;
+}
+.nav-wrapper .outer-wrapper {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
-.nav-wrapper .nav .nav-a {
-  color: white;
+.nav-wrapper .item {
   font-weight: bold;
+  margin: 0px 20px;
 }
-.nav-wrapper .nav .nav-img {
-  max-height: 30px;
+.nav-wrapper .item a {
+  color: white;
+}
+.nav-wrapper .left.inner-wrapper, .nav-wrapper .right.inner-wrapper {
+  flex: 1;
+  display: flex;
+  min-width: -webkit-min-content;
+}
+.nav-wrapper .right.inner-wrapper {
+  justify-content: flex-end;
 }
 
 .card {
@@ -117,8 +127,24 @@ img {
 
 .c-info {
   color: white;
-  background-color: red;
   padding: 20px;
+  display: flex;
+  gap: 10px;
+}
+.c-info .c-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.c-info .c-link {
+  margin: 0;
+  font-size: 0;
+  color: white;
+  transition: 0.5s;
+}
+.c-info .c-socials:hover .c-link {
+  font-size: 1em;
 }
 .c-info img {
   height: 30px;
