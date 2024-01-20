@@ -129,19 +129,26 @@ img {
   color: white;
   padding: 20px;
   display: flex;
-  gap: 10px;
+  gap: 40px;
 }
 .c-info .c-socials {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 10px;
+  transition: 0.8s;
 }
 .c-info .c-link {
+  transition: 0.8s;
   margin: 0;
   font-size: 0;
   color: white;
-  transition: 0.5s;
+  overflow: hidden;
+  text-wrap: nowrap;
+  height: 30px;
+  display: flex;
+  align-items: center;
 }
 .c-info .c-socials:hover .c-link {
   font-size: 1em;
