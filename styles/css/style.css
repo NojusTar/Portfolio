@@ -107,7 +107,6 @@ img {
   border-radius: 20px;
   width: 500px;
   height: 400px;
-  background-image: url("../../../assets/images/pigus_alus.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -156,4 +155,20 @@ img {
 .c-info img {
   height: 30px;
   border-radius: 0;
+}
+
+.ymir-site {
+  background-image: url("../../../assets/project-imgs/ymir-img.jpg");
+}
+
+.ymir-site:hover {
+  background-image: url("../../../assets/gifs/ymir-vid.gif");
+}
+
+.unity-fps {
+  background-image: url("../../../assets/project-imgs/unity-fps.jpg");
+}
+
+.unity-fps:hover {
+  background-image: url("../../../assets/gifs/portfolio-unitygif.gif");
 }/*# sourceMappingURL=style.css.map */
